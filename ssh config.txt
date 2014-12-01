@@ -1,0 +1,14 @@
+Host ubuntumonnode1
+   Hostname ubuntumonnode1
+   User cephuser
+Host ubuntuosd0node2
+   Hostname ubuntuosd0node2
+   User cephuser
+Host ubuntuosd1node3
+   Hostname ubuntuosd1node3
+   User cephuser
+Host cephclient
+   Hostname cephclient
+   User cephclient
+Host openstack
+   Hostname openstack

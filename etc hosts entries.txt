@@ -1,0 +1,27 @@
+(a) /etc/hosts entries in ubuntuadmin node (VM1)
+127.0.0.1       localhost
+127.0.1.1       ubuntuadmin
+192.168.80.154  ubuntumonnode1
+192.168.80.155  ubuntuosd0node2
+192.168.80.156  ubuntuosd1node3
+192.168.80.157  cephclient (ceph client is used initially to test ceph installation then replaced with openstack node)
+192.168.80.164  openstack 
+192.168.80.165  ubuntuadminip (ip address of Ubuntu admin given as separate host entry)
+
+Ubuntumonnode1 (VM2)  
+/etc/hosts entries
+127.0.0.1       localhost
+192.168.80.154  ubuntumonnode1
+192.168.80.164   openstack
+Ubuntuosd0node2 (VM3) , ubuntuosd1node3 (VM4)
+/etc/hosts
+127.0.0.1       localhost
+192.168.80.155  ubuntuosd0node2 same for osd1node3
+Openstack node (VM5)
+/etc/hosts entries
+127.0.0.1       localhost
+192.168.80.164  openstack
+192.168.80.165  ubuntuadminip
+192.168.80.154  ubuntumonnode1
+192.168.80.155  ubuntuosd0node2
+192.168.80.156  ubuntuosd1node3
